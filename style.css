@@ -1,0 +1,72 @@
+/* Общие стили */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+body {
+  font-family: monospace;
+  font-size: 24px;
+}
+
+body > * + * {
+  margin-top: 50px;
+}
+
+h1 {
+  margin-bottom: 1em;
+
+  font-size: 2.5rem;
+}
+
+p + p {
+  margin-top: 1em;
+}
+
+/* /Общие стили */
+
+/* Утилиты */
+.container {
+  width: min(100% - 2rem, 600px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hidden {
+  display: none;
+}
+/* /Утилиты */
+
+/* Шапка */
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-color: hotpink;
+}
+/* /Шапка */
+
+/* Секции */
+.section + .section {
+  margin-top: 30px;
+}
+
+.section-dark {
+  color: white;
+  background-color: #333;
+}
+/* /Секции */
+
+/* Футер */
+.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  color: white;
+  background-color: #333;
+}
+/* /Футер */
